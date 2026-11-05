@@ -22,7 +22,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${hindSiliguri.variable} font-bengali h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-[#E8F5E9]">
         <Navbar/>
         <main>
         {children}
