@@ -1,5 +1,6 @@
  import { Button } from "@heroui/react";
     import { FaSearch, FaArrowRight, FaBolt, FaShieldAlt, FaUsers } from "react-icons/fa";
+import SearchService from "../SearchService";
 
     const features = [
         {
@@ -39,22 +40,9 @@ const Hero = () => {
                         সহজেই খুঁজুন, জানুন এবং প্রয়োজনীয় সেবা গ্রহণ করুন।
                     </p>
 
-                    <form action="/services" method="GET" className="mt-8 flex max-w-2xl items-center gap-2 rounded-full border border-[#E5EEE8] bg-white p-2 shadow-lg shadow-[#26704F]/10">
-                        <FaSearch className="ml-4 shrink-0 text-xl text-[#26704F]" />
-                        <input
-                            type="text"
-                            name="search"
-                            placeholder="কোন সেবার তথ্য খুঁজছেন?"
-                            className="min-w-0 flex-1 bg-transparent px-2 py-3 text-sm text-gray-700 outline-none placeholder:text-gray-400"
-                        />
-                        <Button
-                            type="submit"
-                            className="rounded-full bg-gradient-to-r from-[#26704F] to-[#A64B45] px-7 font-semibold text-white"
-                            
-                        >
-                            খুঁজুন <FaArrowRight />
-                        </Button>
-                    </form>
+                    <div className="mt-8">
+                        <SearchService />
+                    </div>
 
                     <div className="mt-12 flex flex-wrap gap-6 rounded-2xl border border-white/80 bg-white/70 p-5 shadow-sm backdrop-blur-md sm:gap-8">
                         {features.map((feature) => (
