@@ -1,4 +1,6 @@
+import { Button } from "@heroui/react";
 import React from "react";
+import { FaArrowRight, FaSearch } from "react-icons/fa";
 
 const ServicesPage = () => {
   return (
@@ -14,13 +16,24 @@ const ServicesPage = () => {
           </p>
         </div>
 
-        <div className="mb-10 flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div className="mb-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <div className="w-full sm:max-w-md">
-            <input
-              type="text"
-              placeholder="সেবার তথ্য খুঁজুন..."
-              className="w-full rounded-full border border-gray-200 bg-white px-6 py-3 outline-none focus:border-[#26704F]"
-            />
+            <form action="/services" method="GET" className=" flex max-w-2xl items-center gap-2 rounded-full border border-[#E5EEE8] bg-white p-2 shadow-lg shadow-[#26704F]/10">
+                <FaSearch className="ml-4 shrink-0 text-xl text-[#26704F]" />
+                <input
+                    type="text"
+                    name="search"
+                    placeholder="কোন সেবার তথ্য খুঁজছেন?"
+                    className="min-w-0 flex-1 bg-transparent px-2 py-3 text-sm text-gray-700 outline-none placeholder:text-gray-400"
+                />
+                <Button
+                    type="submit"
+                    className="rounded-full bg-gradient-to-r from-[#26704F] to-[#A64B45] px-7 font-semibold text-white"
+                    
+                >
+                    খুঁজুন <FaArrowRight />
+                </Button>
+            </form>
           </div>
 
           <div className="w-full sm:w-56">
