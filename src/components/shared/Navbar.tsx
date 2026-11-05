@@ -11,7 +11,7 @@ const navItems = [
 
 const Navbar = () => {
   return (
-    <div className="bg-gradient-to-r from-[#F2FAFA] via-[#F5EEEE] to-[#F2FAFA] px-4 py-4">
+    <div className="relative z-20  px-4 py-4">
       <div className="navbar max-w-3xl mx-auto rounded-full bg-white/90 backdrop-blur-md border border-white shadow-xl px-5">
         <div className="navbar-start">
           <div className="dropdown">
