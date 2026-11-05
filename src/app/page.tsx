@@ -1,5 +1,6 @@
 
 import Hero from "@/components/pages/homepage/Hero";
+import HowItWorks from "@/components/pages/homepage/HowItWorks";
 import PopularServices from "@/components/pages/homepage/PopularServices";
 import Image from "next/image";
 
@@ -10,6 +11,7 @@ export default function Home() {
     <Hero/>
    </div>
    <PopularServices/>
+   <HowItWorks/>
     </>
 
   );
