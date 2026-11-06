@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Shob Sheba
 
-First, run the development server:
+Shob Sheba is a simple and user-friendly platform that helps people find information about different government services in Bangladesh.
+
+Users can learn about service requirements, required documents, application steps, fees, and official government websites from one place.
+
+## Live Demo
+
+[Visit Shob Sheba](YOUR_LIVE_DEMO_LINK)
+
+## Features
+
+- Simple and clean user interface.
+- Browse popular government services.
+- Search for services by name or keywords.
+- View detailed information about each service.
+- Check eligibility requirements.
+- See the list of required documents.
+- Follow step-by-step application instructions.
+- Get information about government fees and processing times.
+- Visit official government websites directly.
+- Responsive design for mobile, tablet, and desktop.
+- Login and registration UI.
+
+## Technologies Used
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- HeroUI
+- React Icons
+
+## Run Locally
+
+Follow these steps to run the project on your computer.
+
+### 1. Clone the Repository
+
+```bash
+git clone YOUR_GITHUB_REPOSITORY_URL
+```
+
+### 2. Go to the Project Folder
+
+```bash
+cd shob-sheba
+```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 5. Open in Browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+http://localhost:3000
+```
 
-## Learn More
+## Project Structure
 
-To learn more about Next.js, take a look at the following resources:
+```text
+src/
+├── app/
+│   ├── about/
+│   ├── login/
+│   ├── register/
+│   ├── services/
+│   ├── layout.tsx
+│   └── page.tsx
+├── components/
+│   ├── page/homepage/
+│   └── shared/
+├── data/
+│   └── services.json
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Important Note
 
-## Deploy on Vercel
+Shob Sheba is an informational platform, not an official government website or service provider.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+All service information is provided to help users understand the application process. Users should always check the relevant official government website for the latest information before applying.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
