@@ -8,14 +8,9 @@ const CategoryFilter = () => {
     const searchParams = useSearchParams();
 
     const category = searchParams.get("category") || "";
-    const search = searchParams.get("search") || "";
 
     const handleCategoryChange = (value: string) => {
         const params = new URLSearchParams();
-
-        if (search) {
-            params.set("search", search);
-        }
 
         if (value) {
             params.set("category", value);
