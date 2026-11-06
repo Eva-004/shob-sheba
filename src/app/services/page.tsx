@@ -5,16 +5,17 @@ import { FaArrowRight, FaSearch } from "react-icons/fa";
 import services from "@/data/services.json";
 import SearchService from "@/components/pages/SearchService";
 import Link from "next/link";
+import CategoryFilter from "@/components/pages/CategoryFilter";
 
 interface ServicesPageProps {
     searchParams: Promise<{
         search?: string;
+        category?: string;
     }>;
 }
 
-
 const ServicesPage = async ({ searchParams }: ServicesPageProps) => {
-    const { search = "" } = await searchParams;
+    const { search = "", category = "" } = await searchParams;
 
     const query = search.trim().toLocaleLowerCase();
 
@@ -24,8 +25,8 @@ const ServicesPage = async ({ searchParams }: ServicesPageProps) => {
         const keywordMatch = service.keywords.some((keyword) =>
             keyword.toLocaleLowerCase().includes(query)
         );
-
-        return titleMatch || keywordMatch;
+        const categoryMatch = category ? service.category === category : true;
+        return (titleMatch || keywordMatch) && categoryMatch;
     });
     return (
         <div className="min-h-screen bg-[#E8F5E9] px-4 py-12">
@@ -46,16 +47,7 @@ const ServicesPage = async ({ searchParams }: ServicesPageProps) => {
                     </div>
 
                     <div className="w-full sm:w-56">
-                        <select
-                            defaultValue=""
-                            className="w-full rounded-full border border-gray-200 bg-white px-5 py-3 text-gray-600 outline-none focus:border-[#26704F]">
-                            <option value="" disabled>ক্যাটাগরি নির্বাচন করুন</option>
-                            <option value="নাগরিক সেবা">নাগরিক সেবা</option>
-                            <option value="শিক্ষা">শিক্ষা</option>
-                            <option value="স্বাস্থ্য">স্বাস্থ্য</option>
-                            <option value="যানবাহন ও পরিবহন">যানবাহন ও পরিবহন</option>
-                            <option value="ভ্রমণ ও পরিচয়">ভ্রমণ ও পরিচয়</option>
-                        </select>
+                       <CategoryFilter/>
                     </div>
                 </div>
 
