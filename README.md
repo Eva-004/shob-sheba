@@ -7,7 +7,7 @@ Users can learn about service requirements, required documents, application step
 
 ## Live Demo
 
-[Visit Shob Sheba](YOUR_LIVE_DEMO_LINK)
+[Visit Shob Sheba](https://shob-sheba.vercel.app/)
 
 ## Features
 
@@ -38,7 +38,7 @@ Follow these steps to run the project on your computer.
 ### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/Eva-004/shob-sheba
 ```
 
 ### 2. Go to the Project Folder
