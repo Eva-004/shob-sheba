@@ -42,9 +42,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <NavLink href="/login" className="btn rounded-full  bg-white text-[#26704F] px-6 hover:bg-[#26704F] hover:text-white btn-outline">
+          <Link href="/login" className="btn rounded-full  bg-white text-[#26704F] px-6 hover:bg-[#26704F] hover:text-white btn-outline">
             লগইন
-          </NavLink>
+          </Link>
         </div>
       </div>
     </div>
