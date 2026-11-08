@@ -23,6 +23,17 @@ Users can learn about service requirements, required documents, application step
 - Responsive design for mobile, tablet, and desktop.
 - Login and registration UI.
 
+## How the Key Features Work
+
+- **Browse Services:** Users can explore popular government services in Bangladesh and find relevant service information.
+- **Search Services:** Users can search for specific services using service names or related keywords.
+- **Service Details:** Each service has a dedicated details page containing eligibility criteria, required documents, application procedures, fees, and estimated processing times.
+- **Eligibility & Documents:** Users can check whether they meet the requirements and understand which documents they need before applying.
+- **Step-by-Step Guidance:** Users can follow clear instructions to understand how to complete each service application.
+- **Official Website Access:** Users can directly visit the relevant government websites through the provided official links.
+- **Authentication UI:** Users can access the login and registration interfaces.
+- **Responsive Design:** The platform adapts to different screen sizes, providing a consistent experience across mobile, tablet, and desktop devices.
+
 ## Technologies Used
 
 - Next.js
